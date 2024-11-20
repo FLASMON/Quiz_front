@@ -9,6 +9,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.7.0",
+    "@fortawesome/free-brands-svg-icons": "^6.7.0",
+    "@fortawesome/free-regular-svg-icons": "^6.7.0",
+    "@fortawesome/free-solid-svg-icons": "^6.7.0",
+    "@fortawesome/vue-fontawesome": "^3.0.8",
     "ant-design-vue": "^4.2.6",
     "aos": "^2.3.4",
     "tailwindcss-motion": "^0.4.3-beta",
