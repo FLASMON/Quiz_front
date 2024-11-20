@@ -4,7 +4,11 @@ module.exports = {
     './src/**/*.{vue,js,ts,jsx,tsx}' // Tous les fichiers Vue, JS, TS, JSX, et TSX
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        water: ['"Super Water"', 'cursive'], // Remplacez Pacifico par votre police
+      },
+    },
   },
   plugins: [require('tailwindcss-motion')],
 };

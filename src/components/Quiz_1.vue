@@ -1,6 +1,4 @@
 <script setup>
-
-import BG_default from "./Jungle/BG_default.vue";
 import Nuage from "./Jungle/Nuage.vue";
 import Birds from "./Jungle/Birds.vue";
 import Fleure from "./Jungle/Fleure.vue";
@@ -12,26 +10,48 @@ import Lumiere from "./Jungle/Lumiere.vue";
   <div class="overflow-hidden bg-[#9FDAE0] relative mx-auto flex h-screen w-screen-xl pt-0 pb-6 sm:pt-6 my-auto">
     <Nuage/>
     <Birds/>
+    <Fleure/>
     <Defauts/>
     <Lumiere/>
     <div class="w-full px-5 sm:px-8 md:px-12 lg:px-8 max-w-screen-lg lg:max-w-screen-sm mx-auto my-auto relative">
       <div
           class="relative z-10 lg:py-4 text-center bg-white p-4 rounded-md shadow-2xl animate-pop motion-preset-pop duration-500">
-        <p class="text-2xl font-bold text-gray-800 text-center mx-auto max-w-xl uppercase animate-bounce-slow">
+        <span class="text-xl font-bold text-[#5BA72B] text-center mx-auto max-w-xl uppercase animate-bounce-slow">
           Irrigants de france présente
-        </p>
+        </span>
         <h1 class="text-[#3258A4] font-extrabold text-4xl md:text-5xl lg:text-5xl uppercase animate-expand-slow text_irrigant text-stroke">
           Tout savoir sur L’<span class="loader uppercase">eau</span>
         </h1>
+        <span
+            class="absolute bottom-0 left-0 w-full h-1 bg-blue-400 transform origin-left transition-transform duration-500"
+        ></span>
+        <!-- Effet de décoration -->
+        <div class="absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-full opacity-20 transform translate-x-16 -translate-y-16"></div>
+        <div class="absolute bottom-0 left-0 w-24 h-24 bg-blue-100 rounded-full opacity-20 transform -translate-x-12 translate-y-12"></div>
       </div>
-      <div class="my-4 flex justify-center relative z-10">
-        <a-button type="primary" size="large" class="border-2 border-white">Commancez</a-button>
+      <div class="my-8 flex flex-col items-center justify-center gap-4">
+      <span class=" animate-bounce ">
+        <font-awesome-icon icon="fa-solid fa-down-long"
+                           class="!size-7 px-1 py-2 text-white font-bold bg-green-600 hover:bg-green-700  rounded-md focus:outline-none focus:ring-2 focus:ring-blue-300 active:scale-95 transition-transform duration-200 ease-in-out animate-pulse"/>
+      </span>
+        <div class="z-10">
+          <a-button
+              type="primary"
+              size="large"
+              class="flex items-center justify-center border-2 border-white shadow-2xl !px-6 !py-6 uppercase text-white font-bold bg-blue-500 hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-blue-300 active:scale-95 hover:scale-105 transition-transform duration-300 ease-in-out"
+          >
+            Commencez
+          </a-button>
+        </div>
       </div>
+
     </div>
     <div class="absolute right-1/2 bottom-24 transform z-20">
       <img src="/img/eau.png" alt="Eau mascotte" class="water-drop"/>
     </div>
   </div>
+
+
   <!--  data-aos="zoom-in-up"-->
   <!--  <div class="overflow-hidden bg-[#9FDAE0] relative mx-auto flex h-screen w-screen-xl pt-0 pb-6 sm:pt-6 my-auto">-->
   <!--    <div class="w-full px-5 sm:px-8 md:px-12 lg:px-8 max-w-screen-lg lg:max-w-screen-sm mx-auto my-auto relative">-->
