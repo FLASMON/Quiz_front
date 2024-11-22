@@ -6,7 +6,7 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        water: ['"Super Water"', 'cursive'], // Remplacez Pacifico par votre police
+        waterGalon: ['Water Galon', 'sans-serif'], // Nom de la police personnalisée
       },
     },
   },

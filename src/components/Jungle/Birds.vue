@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="absolute inset-0 z-10">
+  <div class="overflow-hidden absolute inset-0 z-10">
     <div class="bird-container bird-container--one">
       <div class="bird bird--one"></div>
     </div>

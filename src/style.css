@@ -1,9 +1,6 @@
-
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 
 *,
 *::before,
@@ -13,5 +10,24 @@
   box-sizing: border-box;
 }
 
+.main-scrool::-webkit-scrollbar {
+  width: 4px;
+  background-color: transparent;
+}
 
+.main-scrool::-webkit-scrollbar-thumb {
+  min-height: 50px;
+  @apply rounded-full bg-gray-300 motion-safe:hover:bg-gray-400 transition-all duration-300;
+}
 
+.main-scrool::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+.main-scrool::-webkit-scrollbar-button {
+  display: none;
+}
+
+.ant-progress.ant-progress-circle .ant-progress-text {
+  display: none !important;
+}

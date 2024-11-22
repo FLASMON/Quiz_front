@@ -9,7 +9,9 @@
 <style scoped>
 .nuage {
   left: -20%;
-  top: 5%;
+  top: 20px;
+  width: 100%;
+  height: 100%;
  /* background: linear-gradient(90deg, #ffffff, #e0e0e0);
   filter: blur(.5px); */
   animation: nuage 200s linear infinite;
@@ -19,16 +21,12 @@
 @keyframes nuage {
   0% {
     left: -20%;
-    top: 5%;
     opacity: 0.8;
   }
-  50% {
-    opacity: 1;
-  }
+
   100% {
     left: 120%;
-    top: 5%;
-    opacity: 0.8;
+    opacity: 1;
   }
 }
 </style>
